@@ -12,34 +12,17 @@ The project currently includes:
 ---
 
 ## Architecture Overview
-
-          ┌─────────────────────┐
-         │   Client / Postman  │
-         └─────────┬──────────┘
-                   │
-                   ▼
-         ┌─────────────────────┐
-         │     API Gateway     │
-         │   (Spring Cloud)    │
-         └─────────┬──────────┘
-                   │
-                   ▼
-         ┌─────────────────────┐
-         │    User-Service     │
-         │      (REST APIs)    │
-         └─────────┬──────────┘
-                   │
-                   ▼
-         ┌─────────────────────┐
-         │    Auth-Service     │
-         │      (REST APIs)    │
-         └─────────┬──────────┘
-                   │
-                   ▼
-         ┌─────────────────────┐
-         │       Eureka        │
-         │  (Service Registry) │
-         └─────────────────────┘
+Client/Postman
+      |
+      v
+  API Gateway
+   /      \
+  v        v
+User     Auth
+ Service Service
+   \      /
+      v
+    Eureka
 
 
 ---
