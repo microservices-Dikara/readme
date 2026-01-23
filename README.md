@@ -6,7 +6,7 @@ The project currently includes:
 - **User Service** – Handles user management (CRUD).  
 - **Auth Service** – Handles authentication and token management (JWT).  
 - **API Gateway** – Single entry point for all requests.  
-- **Eureka Server** – Service discovery and registry.  
+- **Discovery Service** – Service discovery and registry.  
 - **Docker** – Containerized services for easy deployment.
 
 ---
