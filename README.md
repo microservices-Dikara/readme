@@ -12,17 +12,26 @@ The project currently includes:
 ---
 
 ## Architecture Overview
-Client/Postman
-      |
-      v
-  API Gateway
-   /      \
-  v        v
-User     Auth
- Service Service
-   \      /
-      v
-    Eureka
+             +------------------+
+             |  Client/Postman  |
+             +------------------+
+                      |
+                      v
+              +----------------+
+              |   API Gateway  |
+              +----------------+
+                 |          |
+                 v          v
+        +---------------+  +---------------+
+        |  User Service |  |  Auth Service |
+        +---------------+  +---------------+
+                 \          /
+                  \        /
+                   v      v
+                +-------------+
+                |   Eureka    |
+                | Service     |
+                +-------------+
 
 
 ---
