@@ -61,25 +61,26 @@ Environment
 - Docker Desktop: v4.57.0
 
 Make sure Docker Engine is running before executing any commands.
-Running Services Individually
 
-Run auth-service
+If Running Services Individually
+
+- Run auth-service
 
       docker compose build --no-cache auth-service
       docker compose up --build auth-service
       
-Run user-service
+- Run user-service
 
       docker compose build --no-cache user-service
       docker compose up --build user-service
 
-Run api-gateway-service
+- Run api-gateway-service
 
       docker compose build --no-cache api-gateway
       docker compose up --build api-gateway
    
 
-Running All Services at Once
+If Running All Services at Once
 
       docker compose up --build
 
@@ -90,7 +91,8 @@ If you have updated the code or dependencies for a specific service:
       docker compose build {service_name}
       docker compose up {service_name}
       
-      Example
+Example
+
       docker compose stop auth-service
       docker compose build auth-service
       docker compose up auth-service
