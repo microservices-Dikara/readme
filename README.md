@@ -131,5 +131,10 @@ Then rebuild and run it again:
       docker compose down -v
       docker compose build --no-cache
       docker compose up
-
+6. Check Swagger
+- Swagger Auth-Service
+    http://localhost:8082/swagger-ui/index.html
+- Swagger User-Service
+    http://localhost:8081/swagger-ui/index.html
+  
 
