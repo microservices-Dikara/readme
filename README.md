@@ -90,9 +90,12 @@ Make sure Docker Engine is running before executing any commands.
    
 
 2. If Running All Services at Once
-execute this
+
+- To build and run all services simultaneously:
 
       docker compose up --build
+
+ 
       
 
 3. Updating a Specific Service (After Code or Dependency Changes)
