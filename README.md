@@ -71,7 +71,7 @@ Environment
 
 Make sure Docker Engine is running before executing any commands.
 
-1.If Running Services Individually
+1. If Running Services Individually
 
 - Run auth-service
 
@@ -89,12 +89,14 @@ Make sure Docker Engine is running before executing any commands.
       docker compose up --build api-gateway
    
 
-2.If Running All Services at Once
+2. If Running All Services at Once
+execute this
 
       docker compose up --build
+      
 
-3.Updating a Specific Service (After Code or Dependency Changes)
-If you have updated the code or dependencies for a specific service:
+3. Updating a Specific Service (After Code or Dependency Changes)
+- If you have updated the code or dependencies for a specific service:
 
       docker compose stop {service_name}
       docker compose build {service_name}
@@ -107,8 +109,8 @@ Example
       docker compose up auth-service
 
 
-4.Fixing Corrupted Data in a Specific Service
-If a service encounters corrupted data:
+4. Fixing Corrupted Data in a Specific Service
+- If a service encounters corrupted data:
 
       docker compose stop {service_name}
       docker compose rm -f {service_name}
@@ -119,9 +121,9 @@ Then rebuild and run it again:
       docker compose up {service_name}
 
 
-5.Rebuilding All Services (Full Reset)
+5. Rebuilding All Services (Full Reset)
 
-If multiple services are corrupted or you need a full clean rebuild:
+- If multiple services are corrupted or you need a full clean rebuild:
 
       docker compose down -v
       docker compose build --no-cache
